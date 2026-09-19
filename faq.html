@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+<link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='6' fill='%230a0606'/%3E%3Crect x='4' y='22' width='24' height='8' rx='2' fill='%231a1a1a'/%3E%3Crect x='4' y='27' width='24' height='3' rx='1' fill='%23e8a800'/%3E%3Cpath d='M19 2L10 17h7L13 30l14-18H20L22 2z' fill='%231a1a1a' stroke='%231a1a1a' stroke-width='3' stroke-linejoin='round'/%3E%3Cpath d='M19 2L10 17h7L13 30l14-18H20L22 2z' fill='%23e8a800'/%3E%3C/svg%3E">
 <meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1.0">
 <title>FAQ | GroundBolt Equipment</title>
 <meta name="description" content="Power to Get the Job Done — GroundBolt Equipment">
@@ -359,15 +360,38 @@ footer{background:var(--s1);border-top:1px solid var(--bd);padding:64px 40px 28p
 .ft-copy{color:rgba(255,255,255,.26);font-size:.75rem}
 .ppills{display:flex;gap:5px}
 .ppill{background:var(--s2);border:1px solid var(--bd);padding:3px 9px;border-radius:4px;font-size:.65rem;color:rgba(255,255,255,.35);font-weight:600;font-family:var(--ff-body)}
+
+/* full logo SVG */
+.logo-svg{display:block;height:44px;width:auto}
+.logo-mark,.logo-name{display:none!important}
+@media(max-width:480px){.logo-svg{height:36px}}
+
 </style>
 </head>
 <body>
 <div class="hdr-wrap">
   <div class="hdr">
-    <a href="index.html" class="logo">
-      <div class="logo-mark"><svg viewBox="0 0 24 24" width="18" height="18" xmlns="http://www.w3.org/2000/svg"><path d="M14.5 2L6 14h6.5L10 22 22 10h-7L14.5 2z" fill="white"/></svg></div>
-      <span class="logo-name">GroundBolt <em>Equipment</em></span>
-    </a>
+    <a href="index.html" class="logo"><svg viewBox="0 0 370 56" height="46" xmlns="http://www.w3.org/2000/svg">
+  <!-- Earth/ground layers (dark strata) -->
+  <rect x="2" y="38" width="66" height="18" rx="2" fill="#1a1a1a"/>
+  <rect x="2" y="42" width="66" height="3" fill="#2a2a2a"/>
+  <rect x="2" y="47" width="66" height="3" fill="#151515"/>
+  <!-- Gold glow at bottom (ground illuminated by bolt) -->
+  <rect x="2" y="51" width="66" height="5" rx="2" fill="#e8a800"/>
+  <!-- Lightning bolt black outline -->
+  <path d="M38 2L18 30h13L26 54l28-32H40L42 2z"
+        fill="#1a1a1a" stroke="#1a1a1a" stroke-width="5" stroke-linejoin="round"/>
+  <!-- Lightning bolt gold fill -->
+  <path d="M38 2L18 30h13L26 54l28-32H40L42 2z" fill="#e8a800"/>
+  <!-- White highlight on bolt -->
+  <path d="M38 4L21 30h11L25 50l24-30H37L39 4z" fill="rgba(255,255,255,.18)"/>
+  <!-- Wordmark: GROUNDBOLT (white) -->
+  <text x="84" y="38" font-family="'Barlow Condensed',Impact,'Arial Black',sans-serif"
+        font-size="36" font-weight="900" fill="#ffffff" letter-spacing="-0.5">GROUNDBOLT</text>
+  <!-- Sub -->
+  <text x="85" y="54" font-family="'Barlow Condensed',sans-serif"
+        font-size="11.5" font-weight="600" fill="rgba(255,255,255,.42)" letter-spacing="4.5">EQUIPMENT</text>
+</svg></a>
     <button class="hmbtn" onclick="document.querySelector('.nav').classList.toggle('open')" aria-label="Menu">
       <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
     </button>
